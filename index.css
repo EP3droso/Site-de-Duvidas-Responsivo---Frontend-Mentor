@@ -1,0 +1,77 @@
+.titulo{
+    font-weight: bold;
+    color: hsl(292, 42%, 14%);
+    display: inline-block;
+
+}
+
+
+
+.pergunta{
+    text-align: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+    
+}
+.base{
+    vertical-align: middle;
+    text-align: right;
+    padding-left: auto;
+    width: 40px;
+    height: 40px;
+}
+
+.conteudo{
+    color: hsl(292, 16%, 49%);
+    font-weight: 500;
+    opacity: 0.9;
+    font-size: 20px;
+
+    
+}
+
+#faq{
+    margin-left: 30px;
+   
+    font-size: 32px;
+    
+    display: inline-block;
+    text-align: left
+}
+#cabecalho{
+    background-color: white;
+    width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 20px;
+    
+
+
+}
+
+
+@font-face{
+    font-family:"Work-Sans";
+    src: url("/assets/fonts/static/WorkSans-Regular.ttf");
+}
+@font-face{
+    font-family: 'Work-Sans';
+    font-weight: bold;
+    src: url("/assets/fonts/WorkSans-VariableFont_wght.ttf");
+}
+
+
+
+body{
+    background-color: hsl(275, 100%, 97%);
+    background-image: url(/assets/images/fundo2.png) ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: "Work-Sans", sans-serif;
+    
+    
+}

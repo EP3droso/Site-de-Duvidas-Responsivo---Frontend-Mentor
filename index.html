@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  
+  <title>Frontend Mentor | FAQ accordion</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+  </style>
+</head>
+    <body>
+
+ 
+
+  <div id="cabecalho">
+
+
+  <div id="faq">
+   <h1 class="titulo"> <img src="/assets/images/icon-star.svg" id="estrela" > FAQs</h1>
+  </div>
+
+
+
+  <div class="pergunta" id="1">
+  <h3 class = "titulo">What is Frontend Mentor, and how will it help me?</h3> 
+  <img  id="botao1" class="base" src="/assets/images/icon-plus.svg" alt="mais" onclick="mudar('texto1','botao1')">
+
+  <p id="texto1" class="conteudo"></p>
+  </div>
+
+
+  <div class="pergunta" id="2">  
+    <h3 class = "titulo">Is Frontend Mentor free?</h3>
+    <img  id="botao2" class="base" src="/assets/images/icon-plus.svg" alt="mais" onclick="mudar('texto2','botao2')">
+
+    <p id="texto2" class="conteudo">.</p>  
+
+  </div>
+
+
+  <div class="pergunta" id="3">
+
+    <h3 class = "titulo">Can I use Frontend Mentor projects in my portfolio?</h3>
+    <img  id="botao3" class="base" src="/assets/images/icon-plus.svg" alt="mais" onclick="mudar('texto3','botao3')">
+
+    <p id="texto3" class="conteudo"></p>  
+
+  </div>
+
+
+  <div class="pergunta" id="4">
+    
+  <h3 class = "titulo" >How can I get help if Im stuck on a Frontend Mentor challenge?</h3>
+  <img  id="botao4" class="base" src="/assets/images/icon-plus.svg" alt="mais" onclick="mudar('texto4','botao4')">
+
+  <p id = "texto4" class="conteudo"></p>
+
+  </div>
+</div>
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Eduardo Pedroso</a>.
+  </div>
+
+
+
+  <script>
+      let imgAtual = "/assets/images/icon-plus.svg"
+      let imgAntiga ="/assets/images/icon-minus.svg" 
+
+
+    function mudar(textoId,imagemId){
+
+      
+      document.getElementById(imagemId).src = imgAntiga;
+      let aux = imgAtual;
+      imgAtual = imgAntiga;
+      imgAntiga = aux;
+      let texto = ""
+
+
+      if(textoId == "texto1" && document.getElementById(imagemId).src == "http://127.0.0.1:5500/assets/images/icon-minus.svg"){
+         texto = "Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for all levels and ideal for portfolio building."
+      }
+      
+      else if(textoId == "texto2" && document.getElementById(imagemId).src == "http://127.0.0.1:5500/assets/images/icon-minus.svg"){
+        texto = "Yes, Frontend Mentor offers both free and premium coding challenges, with the free option providing access to a range of projects suitable for all skill levels"
+      }
+
+
+
+      else if(textoId == "texto3" && document.getElementById(imagemId).src == "http://127.0.0.1:5500/assets/images/icon-minus.svg"){
+        texto = "The best place to get help is inside Frontend Mentor's Discord community. There's a help channel where you can ask questions and seek support from other community members."
+      }
+
+      else if(textoId == "texto4" && document.getElementById(imagemId).src == "http://127.0.0.1:5500/assets/images/icon-minus.svg"){
+        texto = "The best place to get help is inside Frontend Mentor's Discord community. There's a help channel where you can ask questions and seek support from other community members."
+      }
+   
+      else{
+        texto = ""
+      }
+
+
+      
+
+      console.log(document.getElementById(imagemId).src)
+
+      document.getElementById(textoId).innerHTML = texto;
+
+    }   
+
+  </script>
+</body>
+</html>
