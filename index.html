@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href=".assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href=".favicon-32x32.png">
   <link rel="stylesheet" href="index.css">
   
   <title>Frontend Mentor | FAQ accordion</title>
@@ -26,14 +26,14 @@
 
 
   <div id="faq">
-   <h1 class="titulo"> <img src="assets/icon-star.svg" id="estrela" > FAQs</h1>
+   <h1 class="titulo"> <img src="icon-star.svg" id="estrela" > FAQs</h1>
   </div>
 
 
 
   <div class="pergunta" id="1">
   <h3 class = "titulo">What is Frontend Mentor, and how will it help me?</h3> 
-  <img  id="botao1" class="base" src="assets/icon-plus.svg" alt="mais" onclick="mudar('texto1','botao1')">
+  <img  id="botao1" class="base" src="icon-plus.svg" alt="mais" onclick="mudar('texto1','botao1')">
 
   <p id="texto1" class="conteudo"></p>
   </div>
@@ -41,7 +41,7 @@
 
   <div class="pergunta" id="2">  
     <h3 class = "titulo">Is Frontend Mentor free?</h3>
-    <img  id="botao2" class="base" src="assets/icon-plus.svg" alt="mais" onclick="mudar('texto2','botao2')">
+    <img  id="botao2" class="base" src="icon-plus.svg" alt="mais" onclick="mudar('texto2','botao2')">
 
     <p id="texto2" class="conteudo">.</p>  
 
@@ -51,7 +51,7 @@
   <div class="pergunta" id="3">
 
     <h3 class = "titulo">Can I use Frontend Mentor projects in my portfolio?</h3>
-    <img  id="botao3" class="base" src="assets/icon-plus.svg" alt="mais" onclick="mudar('texto3','botao3')">
+    <img  id="botao3" class="base" src="icon-plus.svg" alt="mais" onclick="mudar('texto3','botao3')">
 
     <p id="texto3" class="conteudo"></p>  
 
@@ -61,7 +61,7 @@
   <div class="pergunta" id="4">
     
   <h3 class = "titulo" >How can I get help if Im stuck on a Frontend Mentor challenge?</h3>
-  <img  id="botao4" class="base" src="assets/icon-plus.svg" alt="mais" onclick="mudar('texto4','botao4')">
+  <img  id="botao4" class="base" src="icon-plus.svg" alt="mais" onclick="mudar('texto4','botao4')">
 
   <p id = "texto4" class="conteudo"></p>
 
@@ -83,7 +83,7 @@
       var texto = document.getElementById(textoId);
 
       if (img.src.includes('icon-plus')) {
-        img.src = 'assets/icon-minus.svg';
+        img.src = 'icon-minus.svg';
         if (textoId === 'texto1') {
           texto.textContent = "Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for all levels and ideal for portfolio building.";
         } else if (textoId === 'texto2') {
@@ -94,7 +94,7 @@
           texto.textContent = "The best place to get help is inside Frontend Mentor's Discord community. There's a help channel where you can ask questions and seek support from other community members.";
         }
       } else {
-        img.src = 'assets/icon-plus.svg';
+        img.src = 'icon-plus.svg';
         texto.textContent = '';
       }
     }
