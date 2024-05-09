@@ -61,14 +61,14 @@
 @font-face{
     font-family: 'Work-Sans';
     font-weight: bold;
-    src: url("/assets/fonts/WorkSans-VariableFont_wght.ttf");
+    src: url("/fonts/WorkSans-VariableFont_wght.ttf");
 }
 
 
 
 body{
     background-color: hsl(275, 100%, 97%);
-    background-image: url(assets/fundo2.png) ;
+    background-image: url(fundo2.png) ;
     background-repeat: no-repeat;
     background-size: 100%;
     font-family: "Work-Sans", sans-serif;
